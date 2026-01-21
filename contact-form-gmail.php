@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Contact Form Gmail
- * Plugin URI: https://zenhpbusiness.com/
+ * Plugin URI: https://github.com/Zagal12/Ranuush
  * Description: A simple contact form that sends messages directly to Gmail using SMTP
  * Version: 1.0.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Ranuush
- * Author URI: https://zenhpbusiness.com/
+ * Author URI: https://github.com/Zagal12
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: contact-form-gmail
