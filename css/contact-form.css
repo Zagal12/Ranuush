@@ -1,0 +1,140 @@
+/**
+ * Contact Form Gmail - Styles
+ */
+
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group .required {
+    color: #e74c3c;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-control.invalid {
+    border-color: #e74c3c;
+}
+
+textarea.form-control {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+.submit-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.loading-spinner {
+    display: inline-block;
+    margin-left: 10px;
+    color: #3498db;
+    font-style: italic;
+}
+
+.form-messages {
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-form-wrapper {
+        padding: 10px;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+/* Animation for messages */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-messages .alert {
+    animation: slideDown 0.3s ease;
+}
