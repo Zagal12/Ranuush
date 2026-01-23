@@ -198,9 +198,18 @@ function contact_form_gmail_add_admin_menu() {
 }
 
 function contact_form_gmail_settings_init() {
-    register_setting( 'contact_form_gmail_settings', 'contact_form_gmail_recipient' );
-    register_setting( 'contact_form_gmail_settings', 'contact_form_gmail_button_bg_color' );
-    register_setting( 'contact_form_gmail_settings', 'contact_form_gmail_button_text_color' );
+    register_setting( 'contact_form_gmail_settings', 'contact_form_gmail_recipient', array(
+        'sanitize_callback' => 'sanitize_email',
+        'default' => ''
+    ) );
+    register_setting( 'contact_form_gmail_settings', 'contact_form_gmail_button_bg_color', array(
+        'sanitize_callback' => 'sanitize_hex_color',
+        'default' => '#3498db'
+    ) );
+    register_setting( 'contact_form_gmail_settings', 'contact_form_gmail_button_text_color', array(
+        'sanitize_callback' => 'sanitize_hex_color',
+        'default' => '#ffffff'
+    ) );
 
     add_settings_section(
         'contact_form_gmail_settings_section',
