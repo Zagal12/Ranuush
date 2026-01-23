@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: Contact Form Gmail
- * Plugin URI: https://github.com/Zagal12/Ranuush
+ * Plugin Name: Contact-Form-Gmail
+ * Plugin URI: https://github.com/Zagal12/contact-form-gmail
  * Description: A simple contact form that sends messages directly to Gmail using SMTP
  * Version: 1.0.0
  * Requires at least: 6.0
